@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+    direction: rtl;
+}
+/* alphabet_Style */
+.sentence_alpha{
+    display: block;
+}
+.sentence_alpha .btn{
+    color: rgb(206, 197, 71);
+    font-size: 1.5em;
+}
+.sentence_alpha .btn:hover{
+    color: rgb(96, 34, 9);
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.enWord{
+    /* border: 3px solid rgb(61, 61, 215); */
+    font-size: 5em;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(244, 247, 247);
+    border: 5px solid rgb(9, 204, 19);
+    position: sticky;
+    top: 250px;
+    }
+.wpic{
+    height: 40%vh;
+}
+.wpic img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ******************************* Story Style**************** */
+.story-title{
+    text-align: center;
+    border-radius: 3px;
+}
+.text-story{
+    font-size: 2em;
+    background: #f7f2f2;
+    line-height: 2em;
+    padding: 20px;
+    border-radius: 3px;
+}
+.text-story span{
+    border-bottom: 2px dashed rgb(129, 19, 19);
+}
