@@ -26,6 +26,9 @@ body{
     position: sticky;
     top: 250px;
     }
+.letN .enWord{
+    font-size: 4em;
+}
 .wpic{
     height: 40%vh;
 }
