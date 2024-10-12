@@ -16,7 +16,10 @@ function putWord(id,word){
  }
 
 //  ******************************** word Section************
-function sentenceAll (id){
+function clearBox(id){
+    document.getElementById(id).innerHTML="";
+}
+function sentenceAll(id){
     let x = document.getElementById(id)
     if(x.style.display === "none"){
         x.style.display = "block";
