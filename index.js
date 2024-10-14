@@ -27,3 +27,65 @@ function sentenceAll(id){
         x.style.display = "none";
     }
 }
+
+
+
+
+
+
+// ******************************** alphabet Section*******************
+function chooseRandom(id){
+    let numR =Math.floor(Math.random()*10);
+    console.log(numR);
+    let myB = document.getElementById(id);
+    switch (numR) {
+        case 0:
+            myB.setAttribute('data-bs-target','#exampleL-A1');
+            console.log("hi masooma");
+            break;
+        case 1:
+            myB.setAttribute('data-bs-target','#exampleL-B1');
+            console.log("hi masooma");
+            break;
+        case 2:
+            myB.setAttribute('data-bs-target','#exampleL-P1');
+            console.log("hi masooma");
+            break;
+        case 3:
+            myB.setAttribute('data-bs-target','#exampleL-T1');
+            console.log("hi masooma");
+            break;
+        case 4:
+            myB.setAttribute('data-bs-target','#exampleL-Th1');
+            console.log("hi masooma");
+            break;
+        case 5:
+            myB.setAttribute('data-bs-target','#exampleL-J1');
+            console.log("hi masooma");
+            break;
+        case 6:
+            myB.setAttribute('data-bs-target','#exampleL-H1');
+            console.log("hi masooma");
+            break;
+        case 7:
+            myB.setAttribute('data-bs-target','#exampleL-Kh1');
+            console.log("hi masooma");
+            break;
+        case 8:
+            myB.setAttribute('data-bs-target','#exampleL-D1');
+            console.log("hi masooma");
+            break;
+        // case 2:
+        //     myB.setAttribute('data-bs-target','#exampleL-P1');
+        //     console.log("hi masooma");
+        //     break;
+        // case 2:
+        //     myB.setAttribute('data-bs-target','#exampleL-P1');
+        //     console.log("hi masooma");
+        //     break;
+    
+        default:
+            break;
+    }
+    
+}
