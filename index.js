@@ -5,7 +5,7 @@ function putWord(id,word){
     document.getElementById(id).innerHTML="<h1 class='enWord mt-5'>"+word+"</h1>";
  }
 
- function putWordPic(id,word ,url){
+ function putWordPic(id,word = '' ,url = ''){
     if(word !== "" && url !== ""){
         document.getElementById(id).innerHTML = "<div> <img class ='imgword' src='"+url+"'></div> <h1 class='enword text-light text-center mt-1'>"+ word+"</h1>"
     } else if (word && url === "") {
@@ -35,7 +35,7 @@ function sentenceAll(id){
 
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
-    let numR =Math.floor(Math.random()*10);
+    let numR =Math.floor(Math.random()*5);
     console.log(numR);
     let myB = document.getElementById(id);
     switch (numR) {
