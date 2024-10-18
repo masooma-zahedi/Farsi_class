@@ -89,3 +89,13 @@ function chooseRandom(id){
     }
     
 }
+
+function putWordhover(id,word  ,url = '' ){
+    // alert(word)
+    putWord(id,word );
+    
+}
+function removeWord(id){
+    document.getElementById(id).innerHTML = "";
+
+}
