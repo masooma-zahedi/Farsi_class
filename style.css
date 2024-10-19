@@ -46,7 +46,7 @@ body{
 
 
 /* *********************** alphabet***************** */
-#sententceN-1{
+#sententceN-1 , #letterW-k1{
     display: none;
     color: rgb(5, 48, 48);
 
