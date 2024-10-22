@@ -15,7 +15,7 @@ function putWord(id,word){
     }
  }
 
-//  ******************************** word Section************
+//  ******************************** word Section*******************************************************************
 function clearBox(id){
     document.getElementById(id).innerHTML="";
 }
@@ -27,6 +27,44 @@ function sentenceAll(id){
         x.style.display = "none";
     }
 }
+                        // ******** Add Sentence To Carousel********
+    let sentences = [];
+    
+    renderHtml();
+    function renderHtml(){
+        let newSentence = "";
+        let Nsentence = "";
+        for(let i = 0; i < sentences.length; i++){
+            const getSentence = sentences[i];
+            if(i === 0){
+                const html = `<div  class="carousel-item active  pe-5">
+                      <h1 class="text-center">${getSentence}</h1>
+                    </div>`;
+                    newSentence +=html;
+            } else {                
+                // const getSentence = sentences[i];
+                const html = `<div  class="carousel-item pe-5">
+                      <h1 class="text-center">${getSentence}</h1>
+                    </div>`;
+                    newSentence +=html;
+                }            
+                const sentenceHtml = `<h2>${getSentence}</h2>`;
+                Nsentence += sentenceHtml;
+        }
+        document.querySelector("#letterGh2").innerHTML = newSentence;
+        document.querySelector("#letterGh4").innerHTML = Nsentence;
+    }
+
+function AddSentenceCarousel(){
+    let inputSentence = document.querySelector("#letterGh3");
+    sentences.push(inputSentence.value);
+    inputSentence.value = " ";     
+    renderHtml();
+    
+}
+
+
+
 
 
 
