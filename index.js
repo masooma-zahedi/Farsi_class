@@ -38,14 +38,15 @@ function sentenceAll(id){
             const getSentence = sentences[i];
             if(i === 0){
                 const html = `<div  class="carousel-item active  pe-5">
-                      <h1 class="text-center">${getSentence}</h1>
+                      <h1 class="text-center">${getSentence} <button onclick='sentences.splice(${i},1); renderHtml();' style='background-color:transparent ;border:none; width:60px; height:50px;'><img class='w-100 h-100' style='overflow:hidden' src='./images/word_pic/10-22-1-deleteButton.webp'></button></h1>
                     </div>`;
                     newSentence +=html;
             } else {                
                 // const getSentence = sentences[i];
                 const html = `<div  class="carousel-item pe-5">
-                      <h1 class="text-center">${getSentence}</h1>
+                      <h1 class="text-center">${getSentence} <button onclick='sentences.splice(${i},1); renderHtml();' style='background-color:transparent ;border:none; width:60px; height:50px;'><img class='w-100 h-100' style='overflow:hidden' src='./images/word_pic/10-22-1-deleteButton.webp'></button></h1>
                     </div>`;
+                    // renderHtml();
                     newSentence +=html;
                 }            
                 const sentenceHtml = `<h2>${getSentence}</h2>`;
@@ -54,6 +55,7 @@ function sentenceAll(id){
         document.querySelector("#letterGh2").innerHTML = newSentence;
         document.querySelector("#letterGh4").innerHTML = Nsentence;
     }
+
 
 function AddSentenceCarousel(){
     let inputSentence = document.querySelector("#letterGh3");
@@ -73,7 +75,7 @@ function AddSentenceCarousel(){
 
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
-    let numR =Math.floor(Math.random()*5);
+    let numR =Math.floor(Math.random()*14);
     console.log(numR);
     let myB = document.getElementById(id);
     switch (numR) {
