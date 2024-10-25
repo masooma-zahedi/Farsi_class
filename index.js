@@ -78,54 +78,71 @@ function AddSentenceCarousel(){
 
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
-    let numR =Math.floor(Math.random()*14);
+    let numR =Math.floor(Math.random()*19);
     console.log(numR);
-    let myB = document.getElementById(id);
+        let myB = document.getElementById(id);
     switch (numR) {
         case 0:
             myB.setAttribute('data-bs-target','#exampleL-A1');
-            console.log("hi masooma");
             break;
         case 1:
             myB.setAttribute('data-bs-target','#exampleL-B1');
-            console.log("hi masooma");
             break;
         case 2:
             myB.setAttribute('data-bs-target','#exampleL-P1');
-            console.log("hi masooma");
             break;
         case 3:
             myB.setAttribute('data-bs-target','#exampleL-T1');
-            console.log("hi masooma");
             break;
         case 4:
             myB.setAttribute('data-bs-target','#exampleL-Th1');
-            console.log("hi masooma");
             break;
         case 5:
             myB.setAttribute('data-bs-target','#exampleL-J1');
-            console.log("hi masooma");
             break;
         case 6:
-            myB.setAttribute('data-bs-target','#exampleL-H1');
-            console.log("hi masooma");
+            myB.setAttribute('data-bs-target','#exampleL-Ch1');
             break;
         case 7:
+            myB.setAttribute('data-bs-target','#exampleL-H1');
+            break;
+        case 8:
             myB.setAttribute('data-bs-target','#exampleL-Kh1');
             console.log("hi masooma");
             break;
-        case 8:
+        case 9:
             myB.setAttribute('data-bs-target','#exampleL-D1');
-            console.log("hi masooma");
             break;
-        // case 2:
-        //     myB.setAttribute('data-bs-target','#exampleL-P1');
-        //     console.log("hi masooma");
-        //     break;
-        // case 2:
-        //     myB.setAttribute('data-bs-target','#exampleL-P1');
-        //     console.log("hi masooma");
-        //     break;
+        case 10:
+            myB.setAttribute('data-bs-target','#exampleL-Zal1');
+            break;
+        case 11:
+            myB.setAttribute('data-bs-target','#exampleL-R1');
+            break;
+        case 12:
+            myB.setAttribute('data-bs-target','#exampleL-ZZ1');
+            break;
+        case 13:
+            myB.setAttribute('data-bs-target','#exampleL-Sin1');
+            break;
+        case 14:
+            myB.setAttribute('data-bs-target','#exampleL-Shin1');
+            break;
+        case 15:
+            myB.setAttribute('data-bs-target','#exampleSad-1');
+            break;
+        case 16:
+            myB.setAttribute('data-bs-target','#exampleZad-1');
+            break;
+        case 17:
+            myB.setAttribute('data-bs-target','#exampleTaa-1');
+            break;
+        case 18:
+            myB.setAttribute('data-bs-target','#exampleZaa-1');
+            break;
+        case 19:
+            myB.setAttribute('data-bs-target','#exampleAin-1');
+            break;
     
         default:
             break;
