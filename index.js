@@ -52,8 +52,8 @@ function sentenceAll(id){
                 const sentenceHtml = `<h2>${getSentence}</h2>`;
                 Nsentence += sentenceHtml;
         }
-        document.querySelector("#letterGh2").innerHTML = newSentence;
-        document.querySelector("#letterGh4").innerHTML = Nsentence;
+        // document.querySelector("#letterGh2").innerHTML = newSentence;
+        // document.querySelector("#letterGh4").innerHTML = Nsentence;
     }
 
 
@@ -139,3 +139,14 @@ function removeWord(id){
     document.getElementById(id).innerHTML = "";
 
 }
+
+// setInterval(changebg(),3000)
+
+// changebg();
+setInterval(function changebg(){
+    let bgColor = [ "rgb(125, 48, 8)", " rgb(135, 48,88)","rgb(101, 48, 75)"," rgb(59, 18, 148)","rgb(84, 11, 11)","rgb(21, 86, 86)"];
+    let color = bgColor[Math.floor(Math.random()*bgColor.length)]
+    document.querySelector(".changeColor").style.backgroundColor = color;
+    console.log(color);
+    
+},1000)
