@@ -171,7 +171,7 @@ function test(id,title,q,w,e,r="",t="",y="",u="",i="",o="",p=""){
     console.log(id);
     
     document.querySelector(id).innerHTML=`<section id="" class="container-fluid">
-          <div class="p-4 pageN1 w-50" style="background-color: rgb(215, 236, 250);">
+          <div class="p-4 pageN1 w-75" style="background-color: rgb(215, 236, 250);">
             <h1 class="text-center  p-4 rounded-3 text-light" style="background-color: rgb(29, 26, 159);">${title}</h1>
             <h2>${q}</h2>
             <h2> ${w} </h2>
