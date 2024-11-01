@@ -78,7 +78,7 @@ function AddSentenceCarousel(){
 
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
-    let numR =Math.floor(Math.random()*19);
+    let numR =Math.floor(Math.random()*9);
     console.log(numR);
         let myB = document.getElementById(id);
     switch (numR) {
