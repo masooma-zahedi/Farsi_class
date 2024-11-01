@@ -64,6 +64,11 @@ body{
 .dis-none{
     display: none;
 }
+.flower-bg{
+    background-image:url("images/webPic/flowers-6515538_1280.jpg") ;
+    
+    /* background-color: #7b1b1b; */
+}
 
 
 
