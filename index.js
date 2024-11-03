@@ -186,12 +186,12 @@ setInterval(function changebg(){
     
 },20000);
 
-function test(id,title,q,w,e,r="",t="",y="",u="",i="",o="",p=""){
+function test(id,colordiv="#761102",colorTitle = "#335198",title,q,w,e,r="",t="",y="",u="",i="",o="",p=""){
     console.log(id);
     
     document.querySelector(id).innerHTML=`<section id="" class="container-fluid">
-          <div class="p-4 pageN1 w-75" style="background-color: rgb(215, 236, 250);">
-            <h1 class="text-center  p-4 rounded-3 text-light" style="background-color: rgb(29, 26, 159);">${title}</h1>
+          <div class="p-4 pageN1 w-75" style="background-color: ${colordiv};">
+            <h1 class="text-center  p-4 rounded-3 text-light" style="background-color: ${colorTitle};">${title}</h1>
             <h2>${q}</h2>
             <h2> ${w} </h2>
             <h2> ${e} </h2>
