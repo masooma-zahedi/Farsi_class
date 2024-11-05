@@ -78,7 +78,7 @@ function AddSentenceCarousel(){
 
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
-    let numR =Math.floor(Math.random()*25);
+    let numR =Math.floor(Math.random()*11);
     console.log(numR);
         let myB = document.getElementById(id);
     switch (numR) {
@@ -155,7 +155,9 @@ function chooseRandom(id){
         case 23:
             myB.setAttribute('data-bs-target','#exampleKaf-1');
             break;
-        // 24 24 24 24 
+        case 24:
+            myB.setAttribute('data-bs-target','#exampleGaf-1');
+            break;
         case 25:
             myB.setAttribute('data-bs-target','#exampleLam-1');
             break;
