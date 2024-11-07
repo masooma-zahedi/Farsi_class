@@ -184,8 +184,7 @@ function removeWord(id){
 setInterval(function changebg(){
     let bgColor = [ "rgb(125, 48, 8)", " rgb(135, 48,88)","rgb(101, 48, 75)"," rgb(59, 18, 148)","rgb(84, 11, 11)","rgb(21, 86, 86)"];
     let color = bgColor[Math.floor(Math.random()*bgColor.length)];
-    document.querySelector(".changeColor").style.backgroundColor = color;
-    
+    document.querySelector(".changeColor").style.backgroundColor = color;    
 },20000);
 
 function test(id,colordiv="#761102",colorTitle = "#335198",title,q,w,e,r="",t="",y="",u="",i="",o="",p=""){
@@ -210,3 +209,84 @@ function test(id,colordiv="#761102",colorTitle = "#335198",title,q,w,e,r="",t=""
 console.log(id);
 
 }
+
+
+// ******************** Start make new carousel for words and sylabels in alpha Page
+
+function makeWordCarousel(classCarousel,sectionClass){
+    let wordCrousel = {
+        title:"letter kk",
+        targetCarouselId :"carouselExampleControlsNoTouching20",
+        idLetter :"h2",
+        imageCarousel :"imgcarousel2"
+    }
+    document.querySelector(`${classCarousel}`).innerHTML=`<h1> hi</h1>
+                <section class = "${sectionClass}" >
+          <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${wordCrousel.title}</h1>
+          <!-- **** start carousel**** -->
+             <div id="${wordCrousel.targetCarouselId}" class="carousel slide mx-auto w-75" data-bs-touch="false" data-bs-interval="false">
+               <div class="carousel-inner mt-4 rounded-2 ${wordCrousel.imageCarousel}" >
+
+                                          <!-- here fill out with js section -->
+
+              </div>
+               <button class="carousel-control-prev" style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${wordCrousel.targetCarouselId}" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next  " style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${wordCrousel.targetCarouselId}" data-bs-slide="next">
+                 <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+          <!-- **** End carousel**** -->
+          <div class=" rounded-3 py-10 wpic changeColor" onmouseleave="removeWord('${wordCrousel.idLetter}')" style="background-color: rgb(202, 160, 44); height: 300px;" id="${wordCrousel.idLetter}"></div>
+
+        </section>
+    `
+
+    let alphaImage = [
+        {
+            image : "https://cdn.britannica.com/45/5645-050-B9EC0205/head-treasure-flower-disk-flowers-inflorescence-ray.jpg",
+            sylabelWord : "کو +زه",
+            active :"active"
+        },
+        {
+            image : "./images/wordPic/10-16-2-ک.png",
+            sylabelWord : "کِ + تاب",
+            active :""
+        },
+        {
+            image : "./images/wordPic/10-16-3-ک.png",
+            sylabelWord : "کاک + توس",
+            active :""
+        },
+        {
+            image : "./images/wordPic/10-16-4-ک.png",
+            sylabelWord : "کا + نا + دا",
+            active :""
+        },
+        {
+            image : "./images/wordPic/10-16-5-ک.png",
+            sylabelWord : "کا + سه",
+            active :""
+        },
+    ]
+     
+    let alphaImageHTML = "";
+    
+    alphaImage.forEach((image)=>{
+        alphaImageHTML += `
+            <div class="carousel-item ${image.active} " style="height: 500px;">
+                <img src="${image.image}" class="d-block mx-auto mb-5 h-75" alt="...">
+                <div class="carousel-caption text-primary " style="width: 100px; height: 100px;margin: 0 auto;          background-color: transparent;">
+                    <img src="./images/webPic/bobSfanji.jpg" class="w-100 h-100" onmouseover="putWordhover('${wordCrousel.idLetter}','${image.sylabelWord}','')"  alt="" srcset="">
+                </div>
+            </div>
+        `;
+    })
+    
+    document.querySelector(`.${wordCrousel.imageCarousel}`).innerHTML += alphaImageHTML;
+    
+}
+// *******************End make new carousel for words and sylabels in alpha Page
