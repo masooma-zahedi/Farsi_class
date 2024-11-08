@@ -220,7 +220,7 @@ function makeWordCarousel(classCarousel,sectionClass){
         idLetter :"h2",
         imageCarousel :"imgcarousel2"
     }
-    document.querySelector(`${classCarousel}`).innerHTML=`<h1> hi</h1>
+    document.querySelector(`${classCarousel}`).innerHTML=`
                 <section class = "${sectionClass}" >
           <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${wordCrousel.title}</h1>
           <!-- **** start carousel**** -->
@@ -278,112 +278,112 @@ function makeWordCarousel(classCarousel,sectionClass){
         },
         {
             image : "./images/exampleLetter/example2/11-07-7.png",
-            sylabelWord : "",
+            sylabelWord : "با + دِن + جان--> بادِنجان",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-8.png",
-            sylabelWord : "",
+            sylabelWord : "پی + یاز -->پیاز",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-9.png",
-            sylabelWord : "",
+            sylabelWord : "پی + یاز + چه --> پیازچه",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-10.png",
-            sylabelWord : "",
+            sylabelWord : "تُ + رُب --> تُرُب",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-11.png",
-            sylabelWord : "",
+            sylabelWord : "جَع + فَ + ری --> جَعفَری",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-12.png",
-            sylabelWord : "",
+            sylabelWord : "چُ + غُن + دَر --> چُغُندَر",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-13.png",
-            sylabelWord : "",
+            sylabelWord : "سیر",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-14.png",
-            sylabelWord : "",
+            sylabelWord : "شَل + غَم --> شَلغَم",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-15.png",
-            sylabelWord : "",
+            sylabelWord : "شِ + وید --> شُوید",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-16.png",
-            sylabelWord : "",
+            sylabelWord : "فِل + فِل --> فِلفِل",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-17.png",
-            sylabelWord : "",
+            sylabelWord : "فِل + فِل + دُل +مِه --> فِلفِل دُلمِه",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-18.png",
-            sylabelWord : "",
+            sylabelWord : "قارچ",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-19.png",
-            sylabelWord : "",
+            sylabelWord : "کا + هو --> کاهو",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-20.png",
-            sylabelWord : "",
+            sylabelWord : "کَ + دو --> کَدو",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-21.png",
-            sylabelWord : "",
+            sylabelWord : " کَ + دو + سَبز --> کَدوسَبز",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-22.png",
-            sylabelWord : "",
+            sylabelWord : "کَ + رَفس --> کَرَفس",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-23.png",
-            sylabelWord : "",
+            sylabelWord : "کَ + لَم --> کَلَم",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-24.png",
-            sylabelWord : "",
+            sylabelWord : "کَ + لَم + بُ + روک + لی--> کَلَم بُروکلی",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-25.png",
-            sylabelWord : "",
+            sylabelWord : "گُل + کَ + لَم --> گُل کَلَم",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-26.png",
-            sylabelWord : "",
+            sylabelWord : "لو + بی + یا --> لوبیا ",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-27.png",
-            sylabelWord : "",
+            sylabelWord : "نُ + خُود + فَ + رَن + گی --> نُخود فَرَنگی",
             active :""
         },
         {
             image : "./images/exampleLetter/example2/11-07-28.png",
-            sylabelWord : "",
+            sylabelWord : "هَ + ویج --> هَویج",
             active :""
         },
     ]
