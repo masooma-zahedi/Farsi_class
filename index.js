@@ -215,7 +215,7 @@ console.log(id);
 
 function makeWordCarousel(classCarousel,sectionClass){
     let wordCrousel = {
-        title:"letter kk",
+        title:"میوه ها و سبزیجات",
         targetCarouselId :"carouselExampleControlsNoTouching20",
         idLetter :"h2",
         imageCarousel :"imgcarousel2"
@@ -247,28 +247,143 @@ function makeWordCarousel(classCarousel,sectionClass){
 
     let alphaImage = [
         {
-            image : "https://cdn.britannica.com/45/5645-050-B9EC0205/head-treasure-flower-disk-flowers-inflorescence-ray.jpg",
-            sylabelWord : "کو +زه",
+            image : "./images/exampleLetter/example2/11-07-1.png",
+            sylabelWord : "اَ + نار  --> اَنار",
             active :"active"
         },
         {
-            image : "./images/wordPic/10-16-2-ک.png",
-            sylabelWord : "کِ + تاب",
+            image : "./images/exampleLetter/example2/11-07-2.png",
+            sylabelWord : "نا + رِن + گی --> نارِنگی",
             active :""
         },
         {
-            image : "./images/wordPic/10-16-3-ک.png",
-            sylabelWord : "کاک + توس",
+            image : "./images/exampleLetter/example2/11-07-3.png",
+            sylabelWord : "کی + وی --> کیوی",
             active :""
         },
         {
-            image : "./images/wordPic/10-16-4-ک.png",
-            sylabelWord : "کا + نا + دا",
+            image : "./images/exampleLetter/example2/11-07-4.png",
+            sylabelWord : "لی + مو --> لیمو",
             active :""
         },
         {
-            image : "./images/wordPic/10-16-5-ک.png",
-            sylabelWord : "کا + سه",
+            image : "./images/exampleLetter/example2/11-07-5.png",
+            sylabelWord : "پُر + تِ + قال --> پُرتقال",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-6.png",
+            sylabelWord : "اِس + فِ + ناج --> اِسفِناج",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-7.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-8.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-9.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-10.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-11.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-12.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-13.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-14.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-15.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-16.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-17.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-18.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-19.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-20.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-21.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-22.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-23.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-24.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-25.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-26.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-27.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/11-07-28.png",
+            sylabelWord : "",
             active :""
         },
     ]
