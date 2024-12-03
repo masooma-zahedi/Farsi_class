@@ -247,34 +247,9 @@ function makeWordCarousel(classCarousel,sectionClass){
 
     let alphaImage = [
         {
-            image : "./images/exampleLetter/example2/11-07-1.png",
-            sylabelWord : "اَ + نار  --> اَنار",
-            active :"active"
-        },
-        {
-            image : "./images/exampleLetter/example2/11-07-2.png",
-            sylabelWord : "نا + رِن + گی --> نارِنگی",
-            active :""
-        },
-        {
-            image : "./images/exampleLetter/example2/11-07-3.png",
-            sylabelWord : "کی + وی --> کیوی",
-            active :""
-        },
-        {
-            image : "./images/exampleLetter/example2/11-07-4.png",
-            sylabelWord : "لی + مو --> لیمو",
-            active :""
-        },
-        {
-            image : "./images/exampleLetter/example2/11-07-5.png",
-            sylabelWord : "پُر + تِ + قال --> پُرتقال",
-            active :""
-        },
-        {
             image : "./images/exampleLetter/example2/11-07-6.png",
             sylabelWord : "اِس + فِ + ناج --> اِسفِناج",
-            active :""
+            active :"active"
         },
         {
             image : "./images/exampleLetter/example2/11-07-7.png",
@@ -386,14 +361,104 @@ function makeWordCarousel(classCarousel,sectionClass){
             sylabelWord : "هَ + ویج --> هَویج",
             active :""
         },
+        {
+            image : "./images/exampleLetter/example2/12-2-1-e.png",
+            sylabelWord : "آ + لو --> آلو",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-2-e.png",
+            sylabelWord : "اَ + نار --> اَنار",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-3-e.png",
+            sylabelWord : "آ + نا + ناس --> آناناس",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-4-e.png",
+            sylabelWord : "اَن + به --> اَنبه",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-5-e.png",
+            sylabelWord : "اَن + جیر --> اَنجیر",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-6-e.png",
+            sylabelWord : "اَن + گور --> اَنگور",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-7-e.png",
+            sylabelWord : "پا + پا + یا --> پاپایا",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-8-e.png",
+            sylabelWord : "پُر + تِ + قال --> پُرتِقال",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-9-e.png",
+            sylabelWord : "تَ + مِشک --> تَمِشک",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-10-e.png",
+            sylabelWord : "توت + فَ + رَن + گی --> توت فَرَنگی",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-11-e.png",
+            sylabelWord : "زَرد + آ + لو --> زردآلو",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-12-e.png",
+            sylabelWord : "سیب",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-13-e.png",
+            sylabelWord : "گُ + لا + بی --> گُلابی",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-14-e.png",
+            sylabelWord : "گی + لاس --> گیلاس",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-15-e.png",
+            sylabelWord : "لی + مو --> لیمو",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-16-e.png",
+            sylabelWord : "موز",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-17-e.png",
+            sylabelWord : "هُ + لو --> هُلو",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/example2/12-2-18-e.png",
+            sylabelWord : "هِن + دِ + وا + نه --> هندوانه",
+            active :""
+        },
     ]
      
     let alphaImageHTML = "";
     
     alphaImage.forEach((image)=>{
         alphaImageHTML += `
-            <div class="carousel-item ${image.active} " style="height: 500px;">
-                <img src="${image.image}" class="d-block mx-auto mb-5 h-75" alt="...">
+            <div class="carousel-item ${image.active} " style="height: 500px; max-width:985px">
+                <img src="${image.image}" class="d-block mx-auto mb-5 h-75 w-75" alt="...">
                 <div class="carousel-caption text-primary " style="width: 100px; height: 100px;margin: 0 auto;          background-color: transparent;">
                     <img src="./images/webPic/bobSfanji.jpg" class="w-100 h-100" onmouseover="putWordhover('${wordCrousel.idLetter}','${image.sylabelWord}','')"  alt="" srcset="">
                 </div>
