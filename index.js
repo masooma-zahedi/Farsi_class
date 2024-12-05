@@ -211,7 +211,7 @@ console.log(id);
 }
 
 
-// ******************** Start make new carousel for words and sylabels in alpha Page
+// ******************** Start make new carousel for words and sylabels in alpha Page --> vagetables & Fruits ******
 
 function makeWordCarousel(classCarousel,sectionClass){
     let wordCrousel = {
@@ -293,7 +293,7 @@ function makeWordCarousel(classCarousel,sectionClass){
         },
         {
             image : "./images/exampleLetter/example2/11-07-15.png",
-            sylabelWord : "شِ + وید --> شُوید",
+            sylabelWord : "شِ + وید --> شِوید",
             active :""
         },
         {
@@ -469,4 +469,4 @@ function makeWordCarousel(classCarousel,sectionClass){
     document.querySelector(`.${wordCrousel.imageCarousel}`).innerHTML += alphaImageHTML;
     
 }
-// *******************End make new carousel for words and sylabels in alpha Page
+// *******************End make new carousel for words and sylabels in alpha Page --> vagetables & Fruits *****
