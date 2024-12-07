@@ -79,7 +79,6 @@ function AddSentenceCarousel(){
 // ******************************** alphabet Section*******************
 function chooseRandom(id){
     let numR =Math.floor(Math.random()*11);
-    console.log(numR);
         let myB = document.getElementById(id);
     switch (numR) {
         case 0:
@@ -108,7 +107,6 @@ function chooseRandom(id){
             break;
         case 8:
             myB.setAttribute('data-bs-target','#exampleL-Kh1');
-            console.log("hi masooma");
             break;
         case 9:
             myB.setAttribute('data-bs-target','#exampleL-D1');
@@ -188,7 +186,6 @@ setInterval(function changebg(){
 },20000);
 
 function test(id,colordiv="#761102",colorTitle = "#335198",title,q,w,e,r="",t="",y="",u="",i="",o="",p=""){
-    console.log(id);
     
     document.querySelector(id).innerHTML=`<section id="" class="container-fluid">
           <div class="p-4 pageN1 w-75" style="background-color: ${colordiv};">
@@ -206,7 +203,6 @@ function test(id,colordiv="#761102",colorTitle = "#335198",title,q,w,e,r="",t=""
           </div>
         </section>
 `;
-console.log(id);
 
 }
 
@@ -467,6 +463,148 @@ function makeWordCarousel(classCarousel,sectionClass){
     })
     
     document.querySelector(`.${wordCrousel.imageCarousel}`).innerHTML += alphaImageHTML;
+    
+}
+// *******************End make new carousel for words and sylabels in alpha Page --> vagetables & Fruits *****
+
+// ******************** Start make new carousel for words and sylabels in alpha Page --> Body Parts ******
+
+function makeWordCarousel1(classCarousel,sectionClass){
+    let bodycarousel = {
+        title:"اعضای بدن",
+        targetCarouselId :"bodyPart1",
+        idLetter :"B1",
+        imageCarousel :"bodyPart2"
+    }
+    document.querySelector(`${classCarousel}`).innerHTML=`
+                <section class = "${sectionClass}" >
+          <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${bodycarousel.title}</h1>
+          <!-- **** start carousel**** -->
+             <div id="${bodycarousel.targetCarouselId}" class="carousel slide mx-auto w-75" data-bs-touch="false" data-bs-interval="false">
+               <div class="carousel-inner mt-4 rounded-2 ${bodycarousel.imageCarousel}" >
+
+                                          <!-- here fill out with js section -->
+
+              </div>
+               <button class="carousel-control-prev" style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${bodycarousel.targetCarouselId}" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next  " style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${bodycarousel.targetCarouselId}" data-bs-slide="next">
+                 <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+          <!-- **** End carousel**** -->
+          <div class=" rounded-3 py-10 wpic changeColor" onmouseleave="removeWord('${bodycarousel.idLetter}')" style="background-color: rgb(202, 160, 44); height: 300px;" id="${bodycarousel.idLetter}"></div>
+
+        </section>
+    `
+
+    let alphaBady = [
+        {
+            image : "./images/exampleLetter/body-exa/12-6-1.png",
+            sylabelWord : "اَعضای بَدَن",
+            active :"active"
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-2.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-3.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-4.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-5.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-6.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-7.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-8.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-9.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-10.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-11.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-12.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-13.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-14.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-15.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-16.png",
+            sylabelWord : "",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-17.png",
+            sylabelWord : "",
+            active :""
+        },
+    ]
+     
+    let alphaImageHTML1 = "";
+    
+    alphaBady.forEach((imag)=>{
+        console.log(imag);
+        
+        alphaImageHTML1 += `
+            <div class="carousel-item ${imag.active} " style="height: 500px; max-width:985px">
+                <img src="${imag.image}" class="d-block mx-auto mb-5 h-75 w-75" alt="...">
+                <div class="carousel-caption text-primary " style="width: 100px; height: 100px;margin: 0 auto;          background-color: transparent;">
+                    <img src="./images/webPic/bobSfanji.jpg" class="w-100 h-100" onmouseover="putWordhover('${bodycarousel.idLetter}','${imag.sylabelWord}','')"  alt="" srcset="">
+                </div>
+            </div>
+        `;
+    })
+    
+    document.querySelector(`.${bodycarousel.imageCarousel}`).innerHTML += alphaImageHTML1;
     
 }
 // *******************End make new carousel for words and sylabels in alpha Page --> vagetables & Fruits *****
