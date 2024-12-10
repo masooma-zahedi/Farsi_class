@@ -509,82 +509,87 @@ function makeWordCarousel1(classCarousel,sectionClass){
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-2.png",
-            sylabelWord : "",
+            sylabelWord : "چِشم",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-3.png",
-            sylabelWord : "",
+            sylabelWord : "اَب + رو --> اَبرو",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-4.png",
-            sylabelWord : "",
+            sylabelWord : "دَست",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-5.png",
-            sylabelWord : "",
+            sylabelWord : "پا",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-6.png",
-            sylabelWord : "",
+            sylabelWord : "لَب",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-7.png",
-            sylabelWord : "",
+            sylabelWord : "دَن + دان --> دَندان",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-8.png",
-            sylabelWord : "",
+            sylabelWord : "مو",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-9.png",
-            sylabelWord : "",
+            sylabelWord : "اَن + گُش + تان --> اَنگُشتان",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-10.png",
-            sylabelWord : "",
+            sylabelWord : "شَصت",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-11.png",
-            sylabelWord : "",
+            sylabelWord : "بی + نی --> بینی",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-12.png",
-            sylabelWord : "",
+            sylabelWord : "گوش",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-13.png",
-            sylabelWord : "",
+            sylabelWord : "زا + نو --> زانو",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-14.png",
-            sylabelWord : "",
+            sylabelWord : "زَ + بان --> زَبان",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-15.png",
-            sylabelWord : "",
+            sylabelWord : "گَر + دَن --> گَردَن",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-16.png",
-            sylabelWord : "",
+            sylabelWord : "شِ + کَم --> شِکَم",
             active :""
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-17.png",
-            sylabelWord : "",
+            sylabelWord : "نا + خُن --> ناخُن",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/body-exa/12-6-18.png",
+            sylabelWord : "صو + رَت --> صورَت",
             active :""
         },
     ]
