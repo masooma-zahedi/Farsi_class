@@ -85,7 +85,7 @@ function chooseRandom(id){
             myB.setAttribute('data-bs-target','#exampleL-A1');
             break;
         case 1:
-            myB.setAttribute('data-bs-target','#exampleL-B1');
+            myB.setAttribute('data-bs-target','#exampleL-Co1');
             break;
         case 2:
             myB.setAttribute('data-bs-target','#exampleL-P1');
@@ -503,7 +503,7 @@ function makeWordCarousel1(classCarousel,sectionClass){
 
     let alphaBady = [
         {
-            image : "./images/exampleLetter/body-exa/12-6-1.png",
+            image :  "./images/exampleLetter/body-exa/12-6-1.png",
             sylabelWord : "اَعضای بَدَن",
             active :"active"
         },
@@ -597,7 +597,6 @@ function makeWordCarousel1(classCarousel,sectionClass){
     let alphaImageHTML1 = "";
     
     alphaBady.forEach((imag)=>{
-        console.log(imag);
         
         alphaImageHTML1 += `
             <div class="carousel-item ${imag.active} " style="height: 500px; max-width:985px">
@@ -612,4 +611,114 @@ function makeWordCarousel1(classCarousel,sectionClass){
     document.querySelector(`.${bodycarousel.imageCarousel}`).innerHTML += alphaImageHTML1;
     
 }
-// *******************End make new carousel for words and sylabels in alpha Page --> vagetables & Fruits *****
+// *******************End make new carousel for words and sylabels in alpha Page --> Body Parts *****
+// ******************** Start make new carousel for words and sylabels in alpha Page --> Color Parts ******
+
+function makeWordCarousel2(classCarousel,sectionClass){
+    let colorCarousel = {
+        title:"رنگ ها",
+        targetCarouselId :"colorPart1",
+        idLetter :"Co1",
+        imageCarousel :"colorPart2"
+    }
+    document.querySelector(`${classCarousel}`).innerHTML=`
+                <section class = "${sectionClass}" >
+          <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${colorCarousel.title}</h1>
+          <!-- **** start carousel**** -->
+             <div id="${colorCarousel.targetCarouselId}" class="carousel slide mx-auto w-75" data-bs-touch="false" data-bs-interval="false">
+               <div class="carousel-inner mt-4 rounded-2 ${colorCarousel.imageCarousel}" >
+
+                                          <!-- here fill out with js section -->
+
+              </div>
+               <button class="carousel-control-prev" style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${colorCarousel.targetCarouselId}" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next  " style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${colorCarousel.targetCarouselId}" data-bs-slide="next">
+                 <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+          <!-- **** End carousel**** -->
+          <div class=" rounded-3 py-10 wpic changeColor" onmouseleave="removeWord('${colorCarousel.idLetter}')" style="background-color: rgb(202, 160, 44); height: 300px;" id="${colorCarousel.idLetter}"></div>
+
+        </section>
+    `
+
+    let alphaColor = [
+        {
+            image :"./images/exampleLetter/color-exa/12-14-1-c.png",
+            sylabelWord : "س ِ + فید --> سِفید",
+            active :"active"
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-2-c.png",
+            sylabelWord : "زرد",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-3-c.png",
+            sylabelWord : "سَبز",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-4-c.png",
+            sylabelWord : "قِر + مِز --> قِرمِز",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-5-c.png",
+            sylabelWord : "آ + بی --> آبی",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-6-c.png",
+            sylabelWord : "بَ + نَفش --> بَنَفش",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-7-c.png",
+            sylabelWord : "صو + رَ + تی --> صورَتی",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-8-c.png",
+            sylabelWord : "نا + رِن + جی --> نارِنجی",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-9-c.png",
+            sylabelWord : "قَه + وِه + ای --> قهوه ای",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-10-c.png",
+            sylabelWord : "خا + کِس + تَ + ری--> خاکِستَری",
+            active :""
+        },
+        {
+            image : "./images/exampleLetter/color-exa/12-14-11-c.png",
+            sylabelWord : "سی + یاه --> سیاه",
+            active :""
+        },
+    ]
+     
+    let alphaImageColor = "";
+    
+    alphaColor.forEach((imag)=>{
+        
+        alphaImageColor += `
+            <div class="carousel-item ${imag.active} " style="height: 500px; max-width:985px">
+                <img src="${imag.image}" class="d-block mx-auto mb-5 h-75 w-75" alt="...">
+                <div class="carousel-caption text-primary " style="width: 100px; height: 100px;margin: 0 auto;          background-color: transparent;">
+                    <img src="./images/webPic/bobSfanji.jpg" class="w-100 h-100" onmouseover="putWordhover('${colorCarousel.idLetter}','${imag.sylabelWord}','')"  alt="" srcset="">
+                </div>
+            </div>
+        `;
+    })
+    
+    document.querySelector(`.${colorCarousel.imageCarousel}`).innerHTML += alphaImageColor;
+    
+}
+// *******************End make new carousel for words and sylabels in alpha Page --> color*****
