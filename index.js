@@ -217,7 +217,7 @@ function makeWordCarousel(classCarousel,sectionClass){
         imageCarousel :"imgcarousel2"
     }
     document.querySelector(`${classCarousel}`).innerHTML=`
-                <section class = "${sectionClass}" >
+        <section class = "${sectionClass}" >
           <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${wordCrousel.title}</h1>
           <!-- **** start carousel**** -->
              <div id="${wordCrousel.targetCarouselId}" class="carousel slide mx-auto w-75" data-bs-touch="false" data-bs-interval="false">
@@ -549,7 +549,7 @@ function makeWordCarousel1(classCarousel,sectionClass){
         },
         {
             image : "./images/exampleLetter/body-exa/12-6-10.png",
-            sylabelWord : "شَصت",
+            sylabelWord : "شَست",
             active :""
         },
         {
