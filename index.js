@@ -722,3 +722,163 @@ function makeWordCarousel2(classCarousel,sectionClass){
     
 }
 // *******************End make new carousel for words and sylabels in alpha Page --> color*****
+// ******************** Start make new carousel for words and sylabels in alpha Page --> Wearable ******
+
+function makeWordCarousel3(classCarousel,sectionClass){
+    let wearCarousel = {
+        title:"پوشیدنی ها",
+        targetCarouselId :"wearPart1",
+        idLetter :"wea1",
+        imageCarousel :"wearPart2"
+    }
+    document.querySelector(`${classCarousel}`).innerHTML=`
+                <section class = "${sectionClass}" >
+          <h1 class="bg-info mt-5 rounded-3 p-4 text-center hov" onclick="sentenceAll('letterW-k2')">${wearCarousel.title}</h1>
+          <!-- **** start carousel**** -->
+             <div id="${wearCarousel.targetCarouselId}" class="carousel slide mx-auto w-75" data-bs-touch="false" data-bs-interval="false">
+               <div class="carousel-inner mt-4 rounded-2 ${wearCarousel.imageCarousel}" >
+
+                                          <!-- here fill out with js section -->
+
+              </div>
+               <button class="carousel-control-prev" style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${wearCarousel.targetCarouselId}" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next  " style="background-color: rgba(227, 217, 204, 0.331);" type="button" data-bs-target="#${wearCarousel.targetCarouselId}" data-bs-slide="next">
+                 <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+          <!-- **** End carousel**** -->
+          <div class=" rounded-3 py-10 wpic changeColor" onmouseleave="removeWord('${wearCarousel.idLetter}')" style="background-color: rgb(202, 160, 44); height: 300px;" id="${wearCarousel.idLetter}"></div>
+
+        </section>
+    `
+
+    let alphaWear = [
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-1-clothes.png",
+            sylabelWord : "پو + شی + دَ + نی + ها --> پوشیدنی ها",
+            active :"active"
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-2-clothes.png",
+            sylabelWord : "تی + شِرت --> تی شرت",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-3-clothes.png",
+            sylabelWord : "بُ + لوز --> بُلوز",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-4-clothes.png",
+            sylabelWord : "دا + مَن",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-5-clothes.png",
+            sylabelWord : "شَل + وار --> شَلوار",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-6-clothes.png",
+            sylabelWord : "شَل + وا + رَک --> شَلوارَک",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-7-clothes.png",
+            sylabelWord : "جِ + لی + قِه --> جِلیقه",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-8-clothes.png",
+            sylabelWord : "پال + تو --> پالتو",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-9-clothes.png",
+            sylabelWord : "پُ + لی + وِر --> پُلیوِر ",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-10-clothes.png",
+            sylabelWord : "پی + را + هَن --> پیراهَن",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-11-clothes.png",
+            sylabelWord : "کِ + را + وات --> کِراوات",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-12-clothes.png",
+            sylabelWord : "مان + تو --> مانتو",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-13-clothes.png",
+            sylabelWord : "جو + راب --> جوراب",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-14-clothes.png",
+            sylabelWord : "کُ + لاه --> کُلاه ",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-15-clothes.png",
+            sylabelWord : "عِی + نَک --> عِینَک ",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-16-clothes.png",
+            sylabelWord : "پی + را + هَن --> پیراهَن",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-17-clothes.png",
+            sylabelWord : "شال + گَر + دَن --> شال گَردَن",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-18-clothes.png",
+            sylabelWord : "دَم + پا + یی --> دَمپایی",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-19-clothes.png",
+            sylabelWord : "کَفش + زَ + نا + نِه--> کفش زنانه",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-20-clothes.png",
+            sylabelWord : "کَ + مَر + بَند --> کَمَربَند",
+            active :""
+        },
+        {
+            image :"./images/exampleLetter/clothes-exa/12-18-21-clothes.png",
+            sylabelWord : "کَفش + مَر + دا + نِه",
+            active :""
+        },
+    ]
+     
+    let alphaImageWear = "";
+    
+    alphaWear.forEach((imag)=>{
+        
+        alphaImageWear += `
+            <div class="carousel-item ${imag.active} " style="height: 500px; max-width:985px">
+                <img src="${imag.image}" class="d-block mx-auto mb-5 h-75 w-75" alt="...">
+                <div class="carousel-caption text-primary " style="width: 100px; height: 100px;margin: 0 auto;          background-color: transparent;">
+                    <img src="./images/webPic/bobSfanji.jpg" class="w-100 h-100" onmouseover="putWordhover('${wearCarousel.idLetter}','${imag.sylabelWord}','')"  alt="" srcset="">
+                </div>
+            </div>
+        `;
+    })
+    
+    document.querySelector(`.${wearCarousel.imageCarousel}`).innerHTML += alphaImageWear;
+    
+}
+// *******************End make new carousel for words and sylabels in alpha Page --> Wearable *****
